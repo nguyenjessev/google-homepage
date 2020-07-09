@@ -10,7 +10,7 @@
             }
             .search-form {
                 display: grid;
-                margin: 25vh auto;
+                margin: 15vh auto;
                 grid-template-columns: 50% 50%;
                 grid-template-rows: 1fr 1fr 1fr;
                 grid-template-areas:
@@ -64,11 +64,60 @@
                 grid-area: lucky;
                 justify-self: start;
             }
+
+            #nav-links {
+                list-style: none;
+                font-size: .8rem;
+                padding: 0 16px;
+                margin-top: 32px;
+            }
+
+            li {
+                margin: 0 8px;
+                display: inline;
+            }
+
+            li a {
+                text-decoration: none;
+                color: hsl(0, 0%, 20%);
+            }
+
+            li a:hover {
+                text-decoration: underline;
+            }
+
+            .nav-right {
+                float: right;
+            }
+
+            #footer-links {
+                position: fixed;
+                width: 100%;
+                height: 40px;
+                box-sizing: border-box;
+                bottom: 0;
+                list-style: none;
+                font-size: .8rem;
+                padding: 0 16px;
+                background: hsl(0, 0%, 95%);
+                margin-bottom: 0;
+                border-top: 1px solid hsl(0, 0%, 80%);
+            }
+
+            #footer-links li {
+                line-height: 40px;
+            }
         </style>
     </head>
     <body>
         <header>
             <nav>
+                <ul id="nav-links">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Store</a></li>
+                    <li class="nav-right"><a href="">Gmail</a></li>
+                    <li class="nav-right"><a href="">Images</a></li>
+                </ul>
             </nav>
         </header>
 
@@ -80,5 +129,18 @@
                 <button id="lucky-button" type="button">I'm Feeling Lucky</button>
             </div>
         </main>
+
+        <footer>
+            <nav>
+                <ul id="footer-links">
+                    <li><a href="">Advertising</a></li>
+                    <li><a href="">Business</a></li>
+                    <li><a href="">How Search works</a></li>
+                    <li class="nav-right"><a href="">Privacy</a></li>
+                    <li class="nav-right"><a href="">Terms</a></li>
+                    <li class="nav-right"><a href="">Settings</a></li>
+                </ul>
+            </nav>
+        </footer>
     </body>
 </html>
